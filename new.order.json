@@ -1,0 +1,143 @@
+{
+  "id": "55b999cc-f2ab-47cd-bca8-f3624491587b",
+  "name": "new.order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-order",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Ok, starting a new order. You can say things like \"I want two pizzas and one mango lassi\". Make sure to specify a quantity for every food item! Also, we have only the following items on our menu: Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa.",
+            "Starting new order. Specify food items and quantities. For example, you can say, \"I would like to order two pizzas and one mango lassi. Also, we have only the following items on our menu: Pav Bhaji, Chole Bhature, Pizza, Mango Lassi, Masala Dosa, Biryani, Vada Pav, Rava Dosa, and Samosa."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "I want to give fresh order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b6f25597-e208-4e25-b425-cc02debc5baf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Can I request to set up a new order, please?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c21141e5-b9e1-4c79-88b9-88882b0c422b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"I'm ready to place an order. What are the next steps?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "75e9d519-3c67-48e0-b0b1-1c759d20c743",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"I'm interested in making a purchase. How do I begin the ordering process?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "33617649-e069-4bd8-858d-5ffc72134669",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"Could you help me start a new order?\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2b66d245-a00b-4252-8954-cd0796f804d3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "\"I'd like to initiate a new order, please.\"",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a1fd2e9d-611f-4540-9889-7d9fba24e737",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "place a new order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4c9a7e8f-9754-40d3-83b5-ce4681287db0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "new order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d67ca8e4-415c-4630-8d2a-f71717131132",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

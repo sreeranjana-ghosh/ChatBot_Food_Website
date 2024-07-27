@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Atliq Fast Food</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Atliq Fast Food</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <img src="banner.jpg" alt="Banner">
+            <!-- Add images here -->
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <img src="menu1.jpg" alt="Menu item 1">
+                <img src="menu2.jpg" alt="Menu item 2">
+                <img src="menu3.jpg" alt="Menu item 3">
+            </div>
+        </section>
+
+        <button id="openModal">Open Chat Bot</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe width="350" height="430" allow="microphone;"
+              src="https://console.dialogflow.com/api-client/demo/embedded/1f0fff1d-8186-4b31-883a-252f85858d60"></iframe>
+         </div>
+        </div>
+        
+
+      <div class="contact">
+        <section id="location">
+            <h2>Location</h2>
+            <p>150/3 Beleghata Main Road Kolkata-700010</p>
+            <!-- Add map widget here -->
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? <br>
+                Call us at +9123869252 
+                <br> email us at info@atliqfastfood.com</p>
+        </section>
+      </div>
+
+    </div>
+    <!-- <div class="chat-bot-container">
+        <iframe class="chat-bot" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1f0fff1d-8186-4b31-883a-252f85858d60"></iframe>
+      </div> -->
+</body>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('open');
+});
+
+    </script>
+</html>

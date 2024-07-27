@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+.header{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    margin: 0px;
+    color: white;
+
+}
+header nav{
+    margin-right: 50px;
+    font-size: 1.2rem;
+}
+
+
+
+header nav a{
+    color: #5fa50e; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+header nav a:hover{
+    color: aqua;
+}
+
+/* Styles for the collapsed navigation button */
+.nav-toggle {
+    display: none; /* Hide the button by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:before {
+    top: -6px;
+}
+
+.hamburger:after {
+    top: 6px;
+}
+
+/* Rotate the before and after elements to create an "X" shape */
+.nav-toggle.open .hamburger:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle.open .hamburger {
+    opacity: 0;
+}
+
+.nav-toggle.open .hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+}
+
+
+#home img{
+ width: 100%;
+}
+
+#menu h2{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+
+
+#menu img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.contact{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Button */
+#openModal {
+    background-color: aquamarine;
+    border-radius: 20px;
+    height: 63px;
+    font-size: 2rem;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#openModal:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+  }
+  
+ /* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  

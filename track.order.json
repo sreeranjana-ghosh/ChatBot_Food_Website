@@ -1,0 +1,144 @@
+{
+  "id": "a2b961b0-0fe6-4cea-b77f-1bcefd2e4d6f",
+  "name": "track.order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-tracking",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Definitely. What is your order id?",
+            "Sure. Please enter your order id.",
+            "Definitely. What is your order id?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Check the whereabouts of a previously submitted order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6b1cae61-4fb1-463e-8e24-e775475c0f90",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Keep an eye on the journey of an order already in the system.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bc9f4035-37b9-41de-b43c-ee3b1486d2ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Stay updated on the status of a previously placed order.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "952aef6d-8cdb-4309-a634-3b1a7b522122",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Keep tabs on an order that's already in motion.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "40db3527-b515-4727-87d4-a7581b6c2ce5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Monitor an existing order's progress.",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "98507ad9-80ca-4958-897d-b171bc4456c8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track existing order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0130eac6-4f2c-405f-97a2-919503ea0308",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d6627e47-250d-4b4f-8e06-29f52ca65d3c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "check the status of my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eff274ea-3680-4559-8ab2-27e1cccc444a",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

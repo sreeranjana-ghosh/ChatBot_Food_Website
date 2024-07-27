@@ -1,0 +1,130 @@
+{
+  "id": "49a68b9d-ee81-401d-987e-975950d55385",
+  "name": "order.complete-context : ongoing-order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ongoing-order"
+  ],
+  "contexts": [
+    "ongoing-order"
+  ],
+  "endInteraction": true,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thank you! Your order is placed, your order id is #",
+            "Thank You! Your order is confirmed, your order id is #"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "No thank you!",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3208e1d0-2f17-4c22-b144-b1c178d376c5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "78fc348e-81d8-4631-bf45-323a98546a41",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7d193840-a86b-4fc9-ad8d-34f4d75e0c3b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Place an order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b670a2fd-4bff-49e3-9e3e-65a26936d0bc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done ordering it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c836bb81-1194-418f-96fc-a25be9f91233",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all I needed",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f3a5556d-62e6-4311-91af-94a7ed1f7ed9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Nope",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1ee4d7de-e1fb-4895-9138-f15d86f5f7a9",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
